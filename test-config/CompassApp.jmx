@@ -206,7 +206,7 @@
       </CSVDataSet>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC02_Accessing a Document Page from the SERP" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">3</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <stringProp name="ThreadGroup.duration">${RIC_TP_Duration}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
@@ -7127,7 +7127,7 @@ vars.put(&quot;CodeChallenger&quot;, CodeChallenger);
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC03_Accessing a Document Page from a Bookmarked or Saved URL   " enabled="true">
-        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">3</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -12703,7 +12703,7 @@ log.info(&quot;array value&quot;+array);
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC04_Search using Designation Filter " enabled="true">
-        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">3</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -21579,7 +21579,7 @@ state:6SzRrnKQtLBkK9APX3WQQHWKLxBUYFnd1VOgUGsWwuTZV4OxARsQqlxRUg6Y6eEP</stringPr
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC05_Search using the All Search filter" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">3</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
