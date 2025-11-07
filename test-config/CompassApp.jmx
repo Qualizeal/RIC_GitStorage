@@ -132,6 +132,11 @@
             <stringProp name="Argument.value">C:\Users\Shamsheer\Desktop\Shaik_Custom Report\</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="P_Users" elementType="Argument">
+            <stringProp name="Argument.name">P_Users</stringProp>
+            <stringProp name="Argument.value">${__groovy(${RIC_TP_Users}/ 4 as int,)} </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
         <stringProp name="TestPlan.comments">Suborg_randomcodechallenge ${__digest(SHA-256,${Suborg_randomcodeverifier},,,)}</stringProp>
       </Arguments>
@@ -201,9 +206,9 @@
       </CSVDataSet>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC02_Accessing a Document Page from the SERP" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${P_TP_RampUp}</stringProp>
-        <stringProp name="ThreadGroup.duration">${P_TP_Duration}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
+        <stringProp name="ThreadGroup.duration">${RIC_TP_Duration}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -7122,8 +7127,8 @@ vars.put(&quot;CodeChallenger&quot;, CodeChallenger);
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC03_Accessing a Document Page from a Bookmarked or Saved URL   " enabled="true">
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${P_TP_RampUp}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -7131,7 +7136,7 @@ vars.put(&quot;CodeChallenger&quot;, CodeChallenger);
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${P_TP_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${RIC_TP_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
@@ -12698,8 +12703,8 @@ log.info(&quot;array value&quot;+array);
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC04_Search using Designation Filter " enabled="true">
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${P_TP_RampUp}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -12707,7 +12712,7 @@ log.info(&quot;array value&quot;+array);
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${P_TP_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${RIC_TP_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
@@ -21574,8 +21579,8 @@ state:6SzRrnKQtLBkK9APX3WQQHWKLxBUYFnd1VOgUGsWwuTZV4OxARsQqlxRUg6Y6eEP</stringPr
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC05_Search using the All Search filter" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${P_TP_RampUp}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${P_Users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -21583,7 +21588,7 @@ state:6SzRrnKQtLBkK9APX3WQQHWKLxBUYFnd1VOgUGsWwuTZV4OxARsQqlxRUg6Y6eEP</stringPr
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${P_TP_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${RIC_TP_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
