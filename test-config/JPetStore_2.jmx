@@ -32,8 +32,8 @@
       </CookieManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
-        <stringProp name="ThreadGroup.num_threads">${P_TP_Users}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${P_TP_RampUp}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${RIC_TP_Users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${RIC_TP_RampUp}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -41,7 +41,7 @@
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${P_TP_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${RIC_TP_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
