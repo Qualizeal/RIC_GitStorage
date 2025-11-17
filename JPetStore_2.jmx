@@ -640,7 +640,7 @@
             </elementProp>
             <elementProp name="influxdbUrl" elementType="Argument">
               <stringProp name="Argument.name">influxdbUrl</stringProp>
-              <stringProp name="Argument.value">http://18.118.94.131:8086/api/v2/write?org=QZ_RIC&amp;bucket=${RIC_InfluxDB_Bucket}</stringProp>
+              <stringProp name="Argument.value">http://18.118.94.131:8086/api/v2/write?org=QualiZeal&amp;bucket=${RIC_InfluxDB_Bucket}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="application" elementType="Argument">
@@ -680,7 +680,7 @@
             </elementProp>
             <elementProp name="influxdbToken" elementType="Argument">
               <stringProp name="Argument.name">influxdbToken</stringProp>
-              <stringProp name="Argument.value">DH5S8N90iMLwRnmuxBnu03Zp7vi033a_8_Gj1byiAF0SdU5UIdfQnEerQas9UxlvpepSMS2CmmgRQH2M7yjHUw==</stringProp>
+              <stringProp name="Argument.value">xfKN-z-OS-wGZ1ZrsPb2xkEnZD2ZsTddIsax8UE4VT4zD_xWYBpl-Ah6pcmN_tUN4WmTTuFd9brPMu_7gZ1Ixw==</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
