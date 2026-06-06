@@ -1,4 +1,0 @@
-P_StreetAddress,P_City,C_State,P_Zipcode
-12075 Morris Road,Alpharetta,Georgia,30005
-1207 Skylar Lane Southeast Chosewood Park,Atlanta,Georgia,30315
-1207 Emery Highway,Macon,Georgia,31217
