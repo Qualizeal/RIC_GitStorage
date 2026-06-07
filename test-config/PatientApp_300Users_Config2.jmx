@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -60,65 +58,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="Backend Listener" enabled="true">
-        <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
-          <collectionProp name="Arguments.arguments">
-            <elementProp name="influxdbMetricsSender" elementType="Argument">
-              <stringProp name="Argument.name">influxdbMetricsSender</stringProp>
-              <stringProp name="Argument.value">org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="influxdbUrl" elementType="Argument">
-              <stringProp name="Argument.name">influxdbUrl</stringProp>
-              <stringProp name="Argument.value">http://18.118.94.131:8086/api/v2/write?org=QualiZeal&amp;bucket=667</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="application" elementType="Argument">
-              <stringProp name="Argument.name">application</stringProp>
-              <stringProp name="Argument.value">QualiZeal</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="measurement" elementType="Argument">
-              <stringProp name="Argument.name">measurement</stringProp>
-              <stringProp name="Argument.value">jmeter</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="summaryOnly" elementType="Argument">
-              <stringProp name="Argument.name">summaryOnly</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="samplersRegex" elementType="Argument">
-              <stringProp name="Argument.name">samplersRegex</stringProp>
-              <stringProp name="Argument.value">.*</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="percentiles" elementType="Argument">
-              <stringProp name="Argument.name">percentiles</stringProp>
-              <stringProp name="Argument.value">99;95;90</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="testTitle" elementType="Argument">
-              <stringProp name="Argument.name">testTitle</stringProp>
-              <stringProp name="Argument.value">667</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="eventTags" elementType="Argument">
-              <stringProp name="Argument.name">eventTags</stringProp>
-              <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="influxdbToken" elementType="Argument">
-              <stringProp name="Argument.name">influxdbToken</stringProp>
-              <stringProp name="Argument.value">xfKN-z-OS-wGZ1ZrsPb2xkEnZD2ZsTddIsax8UE4VT4zD_xWYBpl-Ah6pcmN_tUN4WmTTuFd9brPMu_7gZ1Ixw==</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-          </collectionProp>
-        </elementProp>
-        <stringProp name="classname">org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient</stringProp>
-      </BackendListener>
-      <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC01_PatientApp_Navigations">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC01_PatientApp_Navigations" enabled="true">
         <intProp name="ThreadGroup.num_threads">75</intProp>
         <intProp name="ThreadGroup.ramp_time">20</intProp>
         <longProp name="ThreadGroup.duration">3650</longProp>
@@ -5137,7 +5077,7 @@ $oï¿½Gï¿½Kfh&#x14;ï¿½Qy.ï¿½4Û¥ï¿½ï¿½Mï¿½ï¿½&#x1a;p&#x1;&#x16;)+ï¿½&#x5;)ï¿½dï¿½ï
           <stringProp name="ActionProcessor.duration">${P_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC01_PatientApp_Navigations_T02_ClickOnUrgentCare">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC01_PatientApp_Navigations_T02_ClickOnUrgentCare" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -5738,7 +5678,7 @@ $oï¿½Gï¿½Kfh&#x14;ï¿½Qy.ï¿½4Û¥ï¿½ï¿½Mï¿½ï¿½&#x1a;p&#x1;&#x16;)+ï¿½&#x5;)ï¿½dï¿½ï
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-904 /graphql">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-904 /graphql" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -5806,7 +5746,7 @@ $oï¿½Gï¿½Kfh&#x14;ï¿½Qy.ï¿½4Û¥ï¿½ï¿½Mï¿½ï¿½&#x1a;p&#x1;&#x16;)+ï¿½&#x5;)ï¿½dï¿½ï
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-908 /graphql/getCentersByOrgWithSlots">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-908 /graphql/getCentersByOrgWithSlots" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -9912,7 +9852,7 @@ $oï¿½Gï¿½Kfh&#x14;ï¿½Qy.ï¿½4Û¥ï¿½ï¿½Mï¿½ï¿½&#x1a;p&#x1;&#x16;)+ï¿½&#x5;)ï¿½dï¿½ï
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC02_SC03_SC04_PatientApp_Registration&amp;RegistrationDownload&amp;EditRegistration">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC02_SC03_SC04_PatientApp_Registration&amp;RegistrationDownload&amp;EditRegistration" enabled="true">
         <intProp name="ThreadGroup.num_threads">10</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <longProp name="ThreadGroup.duration">3620</longProp>
@@ -9967,7 +9907,7 @@ $oï¿½Gï¿½Kfh&#x14;ï¿½Qy.ï¿½4Û¥ï¿½ï¿½Mï¿½ï¿½&#x1a;p&#x1;&#x16;)+ï¿½&#x5;)ï¿½dï¿½ï
           <stringProp name="variableNames">C_visitId,C_dob,C_patient</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T01_Launch">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T01_Launch" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -15233,7 +15173,7 @@ gï¿½&#x2;ï¿½m[ï¿½ï¿½&#x5;ï¿½j&#x7f;ï¿½9ï¿½ï¿½Yï¿½ï¿½ï¿½&#x17;0ï¿½2ï¿½&#x19;ï¿½ï¿
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T02_ClickOnVisitStatusEnterDetailsAndClickOnProceed">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T02_ClickOnVisitStatusEnterDetailsAndClickOnProceed" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -15344,7 +15284,7 @@ gï¿½&#x2;ï¿½m[ï¿½ï¿½&#x5;ï¿½j&#x7f;ï¿½9ï¿½ï¿½Yï¿½ï¿½ï¿½&#x17;0ï¿½2ï¿½&#x19;ï¿½ï¿
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-938 /graphql">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-938 /graphql" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -15467,7 +15407,7 @@ try {
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-939 /graphql/getVisitByIdAndDob">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-939 /graphql/getVisitByIdAndDob" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -16117,7 +16057,7 @@ try {
             </RegexExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-941 /icons/piedmont/circle-close.svg">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-941 /icons/piedmont/circle-close.svg" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/icons/piedmont/circle-close.svg</stringProp>
@@ -16172,7 +16112,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-940 /graphql/createVerificationCode">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-940 /graphql/createVerificationCode" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -16264,7 +16204,7 @@ try {
             </RegexExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-942 /api/fetchRedirectionUrl">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-942 /api/fetchRedirectionUrl" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchRedirectionUrl</stringProp>
@@ -18604,7 +18544,7 @@ try {
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T04_ClickOnRegistration">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T04_ClickOnRegistration" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -18745,7 +18685,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,036 /icons/piedmont/photo-upload-camera.svg">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,036 /icons/piedmont/photo-upload-camera.svg" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/icons/piedmont/photo-upload-camera.svg</stringProp>
@@ -19150,7 +19090,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,032 /api/fetchRedirectionUrl">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,032 /api/fetchRedirectionUrl" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchRedirectionUrl</stringProp>
@@ -19323,7 +19263,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,037 /api/fetchVisitFormData">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,037 /api/fetchVisitFormData" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchVisitFormData</stringProp>
@@ -19432,7 +19372,7 @@ try {
             </RegexExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,038 /graphql/isUrlSessionValid">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,038 /graphql/isUrlSessionValid" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -19522,7 +19462,7 @@ try {
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T05_EnterPatientInformationAndClickOnInsurance">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T05_EnterPatientInformationAndClickOnInsurance" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -19607,7 +19547,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,040 /graphql/uploadFile">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,040 /graphql/uploadFile" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -19826,7 +19766,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,043 /graphql/downloadFile">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,043 /graphql/downloadFile" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -20194,7 +20134,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,048 /graphql">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,048 /graphql" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -20262,7 +20202,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,049 /graphql/updateVisitPa">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,049 /graphql/updateVisitPa" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -20417,7 +20357,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,051 /graphql">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,051 /graphql" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -20572,7 +20512,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,053 /graphql/updateVisitPa">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,053 /graphql/updateVisitPa" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -20659,7 +20599,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,054 /icons/piedmont/help.svg">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,054 /icons/piedmont/help.svg" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/icons/piedmont/help.svg</stringProp>
@@ -20714,7 +20654,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,055 /api/fetchRedirectionUrl">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,055 /api/fetchRedirectionUrl" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchRedirectionUrl</stringProp>
@@ -20783,7 +20723,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,056 /api/fetchVisitFormData">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,056 /api/fetchVisitFormData" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchVisitFormData</stringProp>
@@ -20852,7 +20792,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,057 /graphql/isUrlSessionValid">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,057 /graphql/isUrlSessionValid" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -21076,7 +21016,7 @@ try {
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T06_FillDetailsAndClickAuthorization">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T06_FillDetailsAndClickAuthorization" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -21217,7 +21157,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,063 /graphql/updateVisitPa">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,063 /graphql/updateVisitPa" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -21304,7 +21244,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,062 /graphql/updateVisitPa">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,062 /graphql/updateVisitPa" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -21619,7 +21559,7 @@ try {
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T07_FillDetailsAndClickOnSubmit">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_PatientApp_Registration_T07_FillDetailsAndClickOnSubmit" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -22002,7 +21942,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,073 /graphql/updateVisitPa">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,073 /graphql/updateVisitPa" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -22832,7 +22772,7 @@ try {
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC03_PatientApp_RegistrationDownload_T01_ClickOnDownload">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC03_PatientApp_RegistrationDownload_T01_ClickOnDownload" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -22905,7 +22845,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,082 /graphql/createVerificationCode">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,082 /graphql/createVerificationCode" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -23065,7 +23005,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,084 /graphql/verifyOtp">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,084 /graphql/verifyOtp" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -23143,7 +23083,7 @@ try {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,085 /graphql/exportRegistration">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,085 /graphql/exportRegistration" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -23431,7 +23371,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC04_PatientApp_EditRegistration_T01_ClickonUpdate">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC04_PatientApp_EditRegistration_T01_ClickonUpdate" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -23504,7 +23444,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,091 /graphql">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,091 /graphql" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -23572,7 +23512,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,094 /graphql/getRegistrationTemplate">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,094 /graphql/getRegistrationTemplate" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -23867,7 +23807,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,092 /api/fetchRedirectionUrl">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,092 /api/fetchRedirectionUrl" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchRedirectionUrl</stringProp>
@@ -23936,7 +23876,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,093 /graphql/getInsuranceCompaniesWithSort">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,093 /graphql/getInsuranceCompaniesWithSort" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -24040,7 +23980,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,095 /api/fetchVisitFormData">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,095 /api/fetchVisitFormData" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchVisitFormData</stringProp>
@@ -24109,7 +24049,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,096 /graphql/isUrlSessionValid">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,096 /graphql/isUrlSessionValid" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -24199,7 +24139,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
           <stringProp name="ActionProcessor.duration">${C_TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC04_PatientApp_EditRegistration_T02_EditAndClickOnSubmit">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC04_PatientApp_EditRegistration_T02_EditAndClickOnSubmit" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -24272,7 +24212,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,098 /graphql/updateVisitPa">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,098 /graphql/updateVisitPa" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -24493,7 +24433,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,100 /api/fetchVisitFormData">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="-1,100 /api/fetchVisitFormData" enabled="true">
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/fetchVisitFormData</stringProp>
@@ -24562,7 +24502,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,102 /graphql/isUrlSessionValid">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,102 /graphql/isUrlSessionValid" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -24645,7 +24585,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,103 /graphql/getRegistrationTemplate">
+          <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="-1,103 /graphql/getRegistrationTemplate" enabled="true">
             <stringProp name="HTTPSampler.domain">${domins}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -24954,7 +24894,7 @@ bï¿½t&#x5;ï¿½V5ï¿½ï¿½ï¿½Nï¿½Jpï¿½T&gt;&#x10;ï¿½0ï¿½ï¿½ï¿½F0Gï¿½ï¿½6eOï¿½&#x2;ï¿½
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC10_PatientApp_SetLocation">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC10_PatientApp_SetLocation" enabled="true">
         <intProp name="ThreadGroup.num_threads">25</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <longProp name="ThreadGroup.duration">3650</longProp>
@@ -34846,7 +34786,7 @@ D$Cï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½&#x2;Dï¿½ï¿½Ð´%&#x8;ï¿½&#x16;2zï¿½ï¿½&#x14;ï¿½sÚŸ&#x8;&
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC06_SC07_PatientApp_VisitReschedule&amp;VisitStatus">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC06_SC07_PatientApp_VisitReschedule&amp;VisitStatus" enabled="true">
         <intProp name="ThreadGroup.num_threads">10</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <longProp name="ThreadGroup.duration">3620</longProp>
@@ -44899,7 +44839,7 @@ try {
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC08_PatientApp_VirtualVisit">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC08_PatientApp_VirtualVisit" enabled="true">
         <intProp name="ThreadGroup.num_threads">15</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <longProp name="ThreadGroup.duration">3620</longProp>
@@ -58172,7 +58112,7 @@ try {
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC09_SC05_PatientApp_AppointmentBookAHead&amp;VisitCancellation">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC09_SC05_PatientApp_AppointmentBookAHead&amp;VisitCancellation" enabled="true">
         <intProp name="ThreadGroup.num_threads">15</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <longProp name="ThreadGroup.duration">3620</longProp>
@@ -73257,7 +73197,7 @@ try {
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -73293,6 +73233,64 @@ try {
         </objProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
+      <hashTree/>
+      <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="Backend Listener">
+        <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="influxdbMetricsSender" elementType="Argument">
+              <stringProp name="Argument.name">influxdbMetricsSender</stringProp>
+              <stringProp name="Argument.value">org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="influxdbUrl" elementType="Argument">
+              <stringProp name="Argument.name">influxdbUrl</stringProp>
+              <stringProp name="Argument.value">http://18.118.94.131:8086/api/v2/write?org=QualiZeal&amp;bucket=${RIC_InfluxDB_Bucket}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="application" elementType="Argument">
+              <stringProp name="Argument.name">application</stringProp>
+              <stringProp name="Argument.value">${RIC_InfluxDB_App}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="measurement" elementType="Argument">
+              <stringProp name="Argument.name">measurement</stringProp>
+              <stringProp name="Argument.value">jmeter</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="summaryOnly" elementType="Argument">
+              <stringProp name="Argument.name">summaryOnly</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="samplersRegex" elementType="Argument">
+              <stringProp name="Argument.name">samplersRegex</stringProp>
+              <stringProp name="Argument.value">.*</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="percentiles" elementType="Argument">
+              <stringProp name="Argument.name">percentiles</stringProp>
+              <stringProp name="Argument.value">99;95;90</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="testTitle" elementType="Argument">
+              <stringProp name="Argument.name">testTitle</stringProp>
+              <stringProp name="Argument.value">${RIC_InfluxDB_Bucket}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="eventTags" elementType="Argument">
+              <stringProp name="Argument.name">eventTags</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="influxdbToken" elementType="Argument">
+              <stringProp name="Argument.name">influxdbToken</stringProp>
+              <stringProp name="Argument.value">xfKN-z-OS-wGZ1ZrsPb2xkEnZD2ZsTddIsax8UE4VT4zD_xWYBpl-Ah6pcmN_tUN4WmTTuFd9brPMu_7gZ1Ixw==</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </elementProp>
+        <stringProp name="classname">org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient</stringProp>
+      </BackendListener>
       <hashTree/>
     </hashTree>
   </hashTree>
